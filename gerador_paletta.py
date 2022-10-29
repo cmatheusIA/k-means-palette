@@ -35,5 +35,6 @@ def show(cores):
 
 def save(fig):
     img = io.BytesIO()
+    fig.savefig(img, format='png')
     plt.axis("off")
     return img
